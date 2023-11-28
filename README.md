@@ -27,7 +27,7 @@
 ### Prerequisites
 
 - JDK >= 21
-- Kotlin >= 1.9.20
+- Kotlin >= 1.9.21
 
 ### Installing
 

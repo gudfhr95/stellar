@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class StellarApplication
 
 fun main(args: Array<String>) {
-	runApplication<StellarApplication>(*args)
+    runApplication<StellarApplication>(args)
 }
