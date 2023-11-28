@@ -1,5 +1,9 @@
 import org.springframework.boot.gradle.tasks.bundling.BootJar
 
+plugins {
+  id("com.google.cloud.tools.jib")
+}
+
 group = "app.stellar.api"
 version = "0.0.0"
 

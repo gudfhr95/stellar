@@ -6,6 +6,7 @@ pluginManagement {
   val detektVersion: String by settings
   val springBootVersion: String by settings
   val springDependencyManagementVersion: String by settings
+  val jibVersion: String by settings
 
   plugins {
     kotlin("jvm") version kotlinVersion
@@ -16,6 +17,7 @@ pluginManagement {
     id("io.spring.dependency-management") version springDependencyManagementVersion
     kotlin("plugin.spring") version kotlinVersion
     kotlin("plugin.jpa") version kotlinVersion
+    id("com.google.cloud.tools.jib") version jibVersion
   }
 }
 
