@@ -1,4 +1,4 @@
-package app.stellar
+package app.stellar.api
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class StellarApplication
 
 fun main(args: Array<String>) {
-    runApplication<StellarApplication>(args)
+    runApplication<StellarApplication>(args = args)
 }

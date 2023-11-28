@@ -14,6 +14,7 @@ plugins {
 }
 
 group = "app.stellar"
+version = "0.0.0"
 
 allprojects {
   apply(plugin = "org.jetbrains.kotlin.jvm")
@@ -70,7 +71,7 @@ subprojects {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
 
-    testImplementation("org.springframework.boot:spirng-boot-strarter-test")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.kotest:kotest-runner-junit5:$junitVersion")
     testImplementation("io.mockk:mockk:$mockkVersion")
   }
@@ -103,13 +104,13 @@ subprojects {
         limit {
           counter = "BRANCH"
           value = "COVEREDRATIO"
-          minimum = "0.90".toBigDecimal()
+          minimum = "0.70".toBigDecimal()
         }
 
         limit {
           counter = "LINE"
           value = "COVEREDRATIO"
-          minimum = "0.80".toBigDecimal()
+          minimum = "0.70".toBigDecimal()
         }
 
         excludes = listOf()

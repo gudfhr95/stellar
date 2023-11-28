@@ -18,3 +18,5 @@ pluginManagement {
     kotlin("plugin.jpa") version kotlinVersion
   }
 }
+
+include("backend:api")
