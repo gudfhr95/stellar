@@ -68,16 +68,10 @@ subprojects {
   apply(plugin = "jacoco")
 
   dependencies {
-    implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
 
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.kotest:kotest-runner-junit5:$junitVersion")
     testImplementation("io.mockk:mockk:$mockkVersion")
-  }
-
-  tasks.named<BootJar>("bootJar") {
-    enabled = true
   }
 
   tasks.withType<Test> {
