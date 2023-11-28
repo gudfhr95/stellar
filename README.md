@@ -26,19 +26,8 @@
 
 ### Prerequisites
 
-[//]: # (- pre-commit >= 3)
-
-[//]: # (- Earthly >= 0.7)
-
-[//]: # (- Pulumi >= 3)
-
-[//]: # (- Node.js >= 20)
-
-[//]: # (- pnpm >= 8)
-
-[//]: # (- FluxCD >= 2)
-
-[//]: # (- Helm >= 3)
+- JDK >= 21
+- Kotlin >= 1.9.20
 
 ### Installing
 
@@ -55,9 +44,11 @@
 [//]: # (    - `PULUMI_ACCESS_TOKEN`)
 
 [//]: # ()
+
 [//]: # (- Install pre-commit hooks)
 
 [//]: # ()
+
 [//]: # (```shell)
 
 [//]: # (pre-commit install)
@@ -65,9 +56,11 @@
 [//]: # (```)
 
 [//]: # ()
+
 [//]: # (- Configure Pulumi)
 
 [//]: # ()
+
 [//]: # (```shell)
 
 [//]: # (export AWS_ACCESS_KEY_ID=<YOUR_ACCESS_KEY_ID>)
@@ -75,14 +68,17 @@
 [//]: # (export AWS_SECRET_ACCESS_KEY=<YOUR_SECRET_ACCESS_KEY>)
 
 [//]: # ()
+
 [//]: # (pulumi login)
 
 [//]: # (```)
 
 [//]: # ()
+
 [//]: # (- Install Node.js dependencies)
 
 [//]: # ()
+
 [//]: # (```shell)
 
 [//]: # (pnpm install)
