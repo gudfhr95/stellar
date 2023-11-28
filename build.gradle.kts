@@ -14,7 +14,6 @@ plugins {
 }
 
 group = "app.stellar"
-version = "0.0.0"
 
 allprojects {
   apply(plugin = "org.jetbrains.kotlin.jvm")
