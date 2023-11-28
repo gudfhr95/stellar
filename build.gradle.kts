@@ -8,7 +8,7 @@ plugins {
   id("jacoco")
 
   id("org.springframework.boot") apply false
-  id("io.spring.dependency-management")
+  id("io.spring.dependency-management") apply false
   kotlin("plugin.spring") apply false
   kotlin("plugin.jpa") apply false
 }
@@ -22,8 +22,6 @@ allprojects {
   apply(plugin = "io.gitlab.arturbosch.detekt")
 
   apply(plugin = "org.springframework.boot")
-  apply(plugin = "io.spring.dependency-management")
-  apply(plugin = "kotlin-spring")
 
   java.sourceCompatibility = JavaVersion.VERSION_21
 
