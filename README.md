@@ -6,7 +6,7 @@
 
 + [Getting Started](#getting_started)
 
-[//]: # (+ [Usage]&#40;#usage&#41;)
++ [Usage](#usage)
 
 [//]: # (+ [Contributing]&#40;../CONTRIBUTING.md&#41;)
 
@@ -82,8 +82,10 @@ pre-commit install
 
 [//]: # (```)
 
-[//]: # (## Usage <a name = "usage"></a>)
+## Usage <a name = "usage"></a>
 
-[//]: # ()
+To build and run locally, run:
 
-[//]: # (Add notes about how to use the system.)
+```shell
+./run.sh
+```
