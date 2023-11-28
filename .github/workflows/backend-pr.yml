@@ -10,4 +10,4 @@ on:
 jobs:
   check:
     name: Check Gradle
-    uses: ./.github/workflows/gradle-check.yaml
+    uses: ./.github/workflows/gradle-check.yml
