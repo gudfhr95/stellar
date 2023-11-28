@@ -28,6 +28,7 @@
 
 - JDK >= 21
 - Kotlin >= 1.9.21
+- pre-commit >= 3
 
 ### Installing
 
@@ -45,15 +46,11 @@
 
 [//]: # ()
 
-[//]: # (- Install pre-commit hooks)
+- Install pre-commit hooks
 
-[//]: # ()
-
-[//]: # (```shell)
-
-[//]: # (pre-commit install)
-
-[//]: # (```)
+```shell
+pre-commit install
+```
 
 [//]: # ()
 
