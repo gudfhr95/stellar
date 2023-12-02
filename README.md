@@ -28,7 +28,11 @@
 
 - JDK >= 21
 - Kotlin >= 1.9.21
+- Gradle >= 8
+- Node.js >= 20
+- pnpm >= 8
 - pre-commit >= 3
+- Pulumi >= 3
 
 ### Installing
 
@@ -52,35 +56,19 @@
 pre-commit install
 ```
 
-[//]: # ()
+- Configure Pulumi
 
-[//]: # (- Configure Pulumi)
+```shell
+export AWS_ACCESS_KEY_ID=<YOUR_ACCESS_KEY_ID>
+export AWS_SECRET_ACCESS_KEY=<YOUR_SECRET_ACCESS_KEY>
+pulumi login
+```
 
-[//]: # ()
+- Install Node.js dependencies
 
-[//]: # (```shell)
-
-[//]: # (export AWS_ACCESS_KEY_ID=<YOUR_ACCESS_KEY_ID>)
-
-[//]: # (export AWS_SECRET_ACCESS_KEY=<YOUR_SECRET_ACCESS_KEY>)
-
-[//]: # ()
-
-[//]: # (pulumi login)
-
-[//]: # (```)
-
-[//]: # ()
-
-[//]: # (- Install Node.js dependencies)
-
-[//]: # ()
-
-[//]: # (```shell)
-
-[//]: # (pnpm install)
-
-[//]: # (```)
+```shell
+pnpm install
+```
 
 ## Usage <a name = "usage"></a>
 
