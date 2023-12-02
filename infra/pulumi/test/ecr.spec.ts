@@ -13,7 +13,7 @@ describe('ECR', () => {
     pulumi.runtime.setMocks({
       newResource: (
         args: pulumi.runtime.MockResourceArgs
-      ): { id: string; state: any } => {
+      ): {id: string; state: any} => {
         return {
           id: `${args.name}-id`,
           state: {
@@ -40,9 +40,7 @@ describe('ECR', () => {
       const stellarRepositoryName = await promiseOf(
         infra.stellarRepository.repository.name
       );
-      const stellarRepositoryUrl = await promiseOf(
-        infra.stellarRepository.url
-      );
+      const stellarRepositoryUrl = await promiseOf(infra.stellarRepository.url);
 
       expect(stellarRepositoryName).toBe('stellar');
       expect(stellarRepositoryUrl).toBe('stellar-url');
