@@ -36,19 +36,13 @@
 
 ### Installing
 
-[//]: # (- Add repository secrets in Github Actions)
+- Add repository secrets in Github Actions
+  - `AWS_ACCESS_KEY_ID`
+  - `AWS_SECRET_ACCESS_KEY`
+  - `AWS_REGION`
+  - `PULUMI_ORG_NAME`
+  - `PULUMI_ACCESS_TOKEN`
 
-[//]: # (    - `AWS_ACCESS_KEY_ID`)
-
-[//]: # (    - `AWS_SECRET_ACCESS_KEY`)
-
-[//]: # (    - `AWS_REGION`)
-
-[//]: # (    - `PULUMI_ORG_NAME`)
-
-[//]: # (    - `PULUMI_ACCESS_TOKEN`)
-
-[//]: # ()
 
 - Install pre-commit hooks
 

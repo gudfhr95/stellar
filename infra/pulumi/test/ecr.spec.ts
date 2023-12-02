@@ -35,15 +35,15 @@ describe('ECR', () => {
     infra = await import('../src/ecr');
   });
 
-  describe('stellar repository', () => {
+  describe('backend repository', () => {
     it('should be created', async () => {
-      const stellarRepositoryName = await promiseOf(
-        infra.stellarRepository.repository.name
+      const backendRepositoryName = await promiseOf(
+        infra.backendRepository.repository.name
       );
-      const stellarRepositoryUrl = await promiseOf(infra.stellarRepository.url);
+      const backendRepositoryUrl = await promiseOf(infra.backendRepository.url);
 
-      expect(stellarRepositoryName).toBe('stellar');
-      expect(stellarRepositoryUrl).toBe('stellar-url');
+      expect(backendRepositoryName).toBe('backend');
+      expect(backendRepositoryUrl).toBe('backend-url');
     });
   });
 });
