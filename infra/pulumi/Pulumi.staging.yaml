@@ -1,0 +1,3 @@
+config:
+  profile: staging
+  aws:region: ap-northeast-2
