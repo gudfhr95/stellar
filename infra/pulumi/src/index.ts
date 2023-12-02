@@ -1,3 +1,3 @@
-import {stellarRepository} from './ecr';
+import {backendRepository} from './ecr';
 
-export const stellarRepositoryUrl = stellarRepository.url;
+export const backendRepositoryUrl = backendRepository.url;

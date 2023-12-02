@@ -1,5 +1,5 @@
 import * as awsx from '@pulumi/awsx';
 
-export const stellarRepository = new awsx.ecr.Repository('stellar', {
-  name: 'stellar',
+export const backendRepository = new awsx.ecr.Repository('backend', {
+  name: 'backend',
 });
