@@ -41,7 +41,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Install dependencies
         run: pnpm install
-      - uses: pulumi/actions@v4
+      - uses: pulumi/actions@v5
         with:
           command: preview
           stack-name: ${{ secrets.PULUMI_ORG_NAME }}/infra/${{ inputs.profile }}
